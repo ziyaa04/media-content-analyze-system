@@ -72,8 +72,6 @@
 
 ### Реєстрація
 
-![alt text](https://github.com/SavageVictor/media-content-analyze-system/blob/master/docs/use-cases/img/1.jpg?raw=true)
-
 **ID: USER.REG**
     
 **НАЗВА:** Реєстрація нового облікового запису
@@ -114,8 +112,6 @@
 
 ### Авторизація
 
-![alt text](https://github.com/SavageVictor/media-content-analyze-system/blob/master/docs/use-cases/img/2.jpg?raw=true)
-
 **ID: USER.LOGIN**
     
 **НАЗВА:** Авторизація в обліковий запис зареєстрованого користувача
@@ -154,8 +150,6 @@
 @enduml 
 
 ### Запит на знаходження та аналіз даних
-
-![alt text](https://github.com/SavageVictor/media-content-analyze-system/blob/master/docs/use-cases/img/3.jpg?raw=true)
 
 **ID: USER.SEARCH**
     
@@ -202,8 +196,6 @@
 
 ### Звертання за допомогою до системи
 
-![alt text](https://github.com/SavageVictor/media-content-analyze-system/blob/master/docs/use-cases/img/4.jpg?raw=true)
-
 **ID: USER.HELP**
     
 **НАЗВА:** Користувач звертається за допомогою до системи
@@ -242,8 +234,6 @@
 
 ### Звертання за допомогою до адміністратора
 
-![alt text](https://github.com/SavageVictor/media-content-analyze-system/blob/master/docs/use-cases/img/5.jpg?raw=true)
-
 **ID: ADMIN.HELP**
     
 **НАЗВА:** Виклик адміністратора
@@ -281,8 +271,6 @@
 ## АДМІНІСТРАТОР
 
 ### Додавання джерела інформації
-
-![alt text](https://github.com/SavageVictor/media-content-analyze-system/blob/master/docs/use-cases/img/6.jpg?raw=true)
 
 **ID: ADMIN.NSRC**
     
@@ -323,8 +311,6 @@
 
 ### Надання прав користувачам
 
-![alt text](https://github.com/SavageVictor/media-content-analyze-system/blob/master/docs/use-cases/img/7.jpg?raw=true)
-
 **ID: ADMIN.ARIGHTS**
     
 **НАЗВА:** Надання прав користувачам
@@ -363,8 +349,6 @@
 @enduml
 
 ### Отримання статистики
-
-![alt text](https://github.com/SavageVictor/media-content-analyze-system/blob/master/docs/use-cases/img/8.jpg?raw=true)
 
 **ID: ADMIN.STAT**
     
