@@ -19,7 +19,7 @@
     usecase "Запит на знаходження даних" as Search  
     usecase "Редагування профілю" as Edit  
     usecase "Управління джерелами" as Sources  
-    usecase "Звертання за допомогою" as Help  
+    usecase "Звернення за допомогою" as Help  
 
     usecase "Додавання джерела інформації" as AddSource  
     usecase "Надання прав користувачам" as Rights  
@@ -45,7 +45,7 @@
 
     actor "Користувач" as User  
 
-    usecase "Звертання за допомогою" as Help  
+    usecase "Звернення за допомогою" as Help  
     usecase "До системи" as SystemHelp  
     usecase "До адміністратора" as AdminHelp  
 
@@ -194,7 +194,7 @@
 
 @enduml 
 
-### Звертання за допомогою до системи
+### Звернення за допомогою до системи
 
 **ID: USER.HELP**
     
@@ -232,7 +232,7 @@
 
 @enduml 
 
-### Звертання за допомогою до адміністратора
+### Звернення за допомогою до адміністратора
 
 **ID: ADMIN.HELP**
     
