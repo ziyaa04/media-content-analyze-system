@@ -8,49 +8,69 @@ entity User.name
 entity User.login
 entity User.password
 entity User.email
+entity User.role
 
 User.name --* User
-User.login -l-* User
+User.login --* User
 User.password --* User
 User.email --* User
+User.role --* User
 
 entity Access
-Access "0,*" -u- "1,1" User
+entity Access.role
 
-entity Role
-Role "1,1" -l- "0,*" Access
-entity Role.name
-entity Role.description
-Role.name -u-* Role
-Role.description -l-* Role
+Access.role -u-* Access
 
 entity Request
-Request "0,*" -r- "1,1" Access
-entity Request.field
-entity Request.filter
-Request.field -u-* Request
-Request.filter -u-* Request
+entity Request.id
+entity Request.title
+entity Request.description
+entity Request.date
+
+Request.id --* Request
+Request.title --* Request
+Request.description --* Request
+Request.date --* Request
+
+entity Help
+entity Help.id
+entity Help.title
+entity Help.description
+
+Help.id --* Help
+Help.title --* Help
+Help.description -u-* Help
+
+Access "0,*" -u- "1,1" User
+Access "0,*" -l- "1,1" Request
+Access "0,*" -r- "1,1" Help
 
 entity Source
-entity Date
-entity Keywords
-Source --u|> Request.filter
-Date --u|> Request.filter
-Keywords --u|> Request.filter
+entity Source.id
+entity Source.url
 
-entity ID
-entity Description
-ID --u|> Request.field
-Description --u|> Request.field
+Source.id -u-* Source
+Source.url -u-* Source
+
+entity Filter
+entity Filter.date_from
+entity Filter.date_to
+
+Filter.date_from -u-* Filter
+Filter.date_to -u-* Filter
 
 entity Result
-Result "0,*" -- "1,1" Request
 entity Result.id
-entity Result.name
+entity Result.title
 entity Result.description
-Result.id --* Result
-Result.name --* Result
-Result.description --* Result
+
+Result.id -u-* Result
+Result.title -u-* Result
+Result.description -d-* Result
+
+Request "0,1" -d- "1,1" Filter
+Request "1,*" -d- "0,*" Source
+Request "1,1" -d- "0,*" Result
 
 
 @enduml
