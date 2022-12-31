@@ -69,7 +69,7 @@ Result.title -u-* Result
 Result.description -d-* Result
 
 Request "0,1" -d- "1,1" Filter
-Request "1,*" -d- "0,*" Source
+Request "0,*" -d- "1,*" Source
 Request "1,1" -d- "0,*" Result
 
 
@@ -123,7 +123,7 @@ role: TEXT
 User "1,1" -- "0,*" Access
 Access "0,*" -- "1,1" Request
 Access "0,*" -r- "1,1" Help
-Request "1,*" -- "0,*" Source
+Request "0,*" -- "1,*" Source
 Request "1,1" -u- "0,*" Result
 Request "0,1" -r- "1,1" Filter
 
