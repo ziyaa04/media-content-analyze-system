@@ -131,4 +131,4 @@ Request "0,1" -r- "1,1" Filter
 
 ## Реляційна схема
 
-<img src="relschem.jpg">
+<img src="./relschem.jpg">
